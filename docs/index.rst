@@ -11,10 +11,6 @@
 	:maxdepth: 2
 
 	简介 <introduction>
-	概述 <concepts>
 	请求 <request>
 	返回结果 <response>
-	签名 <signature>
 	接口 <api>
-	SDK <sdk>
-
