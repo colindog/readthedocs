@@ -1,7 +1,7 @@
 返回结果
 ==============
 
-保全网API的返回结果是一个Json字符串，正常返回时的Http status code为2xx，其它code均表示异常。
+仙海API的返回结果是一个Json字符串，正常返回时的Http status code为2xx，其它code均表示异常。
 
 正常返回
 --------------
@@ -18,13 +18,13 @@ data         有效数据，具体在接口里面描述
 例如::
 
 	{
-		"request_id": "2XiTgZ2oVrBgGqKQ1ruCKh",
+		"request_id": "JsKGxxE0AVWBpWUHsJhLbv",
 		"data": {
-			"attestation_id": "nXiTrBgQ1ruCKhgZ2oV"
+			"attestation_id": "f2NVoLlmBTWdu2HkGaAICg"
 		}
 	} 
 
-另外一种是返回一个文件，比如下载保全文件时。
+另外一种是返回一个文件，比如下载存证文件时。
 
 
 异常返回
@@ -47,16 +47,15 @@ Code         描述
 ===========  ================================ 
 400          请求错误，比如参数不符合格式 
 404          请求路径不存在
-405          请求方法错误
-413          请求数据过大，比如上传文件过大
-429          请求次数太多
+405          请求方法有错误
+413          请求数据有错误
 500          请求失败，比如数字签名未通过   
 ===========  ================================
 
 例如::
 
 	{
-		"request_id": "2XiTgZ2oVrBgGqKQ1ruCKh",
-		"message": "数字签名校验失败",
-		"timestamp": 1464672264000
+		"request_id": "Ebi3Rm5vUt6amQXufV74yN",
+		"message": "签名校验失败",
+		"timestamp": 555382475
 	} 
